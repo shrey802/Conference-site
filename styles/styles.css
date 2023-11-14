@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300&display=swap');
-*{
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
 }
 
 /* .top-header{
@@ -44,13 +45,13 @@
 
     .dylogo img {
         width: 200px; /* Further reduce image width for small screens if needed */
-    /* }
+/* }
     .conference-heading{
         margin: 8px;
     }
     .conference-heading h2 {
         font-size: 1.3rem; /* Adjust heading font size for small screens */
-    /* }
+/* }
     .conference-heading p{
         font-size: 1.1rem;
         padding-top: 10px;
@@ -85,34 +86,36 @@
   height: 60px;
   width: auto;
   position: relative;
-  display: flex; /* Use flexbox to center items horizontally */
-  justify-content: center; /* Center items horizontally */
+  display: flex;
+  /* Use flexbox to center items horizontally */
+  justify-content: center;
+  /* Center items horizontally */
   margin-top: 10px;
 }
 
-.nav > .nav-header {
+.nav>.nav-header {
   display: inline;
 }
 
-.nav > .nav-header > .nav-title {
+.nav>.nav-header>.nav-title {
   display: inline-block;
   font-size: 22px;
   color: #fff;
   padding: 10px 10px 10px 10px;
 }
 
-.nav > .nav-btn {
+.nav>.nav-btn {
   display: none;
- 
+
 }
 
-.nav > .nav-links {
+.nav>.nav-links {
   display: inline;
   font-size: 18px;
   background-color: #9E1C36;
 }
 
-.nav > .nav-links > a {
+.nav>.nav-links>a {
   display: inline-block;
   padding: 13px 20px;
   text-decoration: none;
@@ -121,70 +124,82 @@
   font-weight: bolder;
 }
 
-.nav .nav-links > a:hover{
+.nav .nav-links>a:hover {
   color: #232342;
 }
 
-.nav > #nav-check {
+.nav>#nav-check {
   display: none;
 }
 
 @media (min-width: 800px) and (max-width: 1300px) {
-  .nav > .nav-links > a{
+  .nav>.nav-links>a {
     font-size: 12px;
   }
 }
 
 @media (max-width: 800px) {
-  .nav > .nav-btn {
+  .nav>.nav-btn {
     display: inline-block;
     position: absolute;
     right: 0px;
     top: 0px;
   }
-  .nav > .nav-btn > label {
+
+  .nav>.nav-btn>label {
     display: inline-block;
     width: 50px;
     height: 50px;
     padding: 13px;
   }
-  .nav > .nav-btn > label:hover,
-  .nav #nav-check:checked ~ .nav-btn > label {
+
+  .nav>.nav-btn>label:hover,
+  .nav #nav-check:checked~.nav-btn>label {
     background-color: #9E1C36;
   }
-  .nav > .nav-btn > label > span {
+
+  .nav>.nav-btn>label>span {
     display: block;
     width: 25px;
     height: 10px;
     border-top: 2px solid #eee;
   }
-  .nav > .nav-links {
+
+  .nav>.nav-links {
     position: absolute;
     display: block;
     width: 100%;
-    height: auto; /* Change this to auto */
+    height: auto;
+    /* Change this to auto */
     transition: all 0.3s ease-in;
     overflow-y: hidden;
     top: 50px;
     left: 0px;
-    background-color: #9E1C36; /* Add background color */
+    background-color: #9E1C36;
+    /* Add background color */
   }
-  .nav > .nav-links > a {
+
+  .nav>.nav-links>a {
     display: block;
     width: 100%;
-    padding: 10px 0; /* Add some padding for better spacing */
-    text-align: center; /* Center-align the text */
+    padding: 10px 0;
+    /* Add some padding for better spacing */
+    text-align: center;
+    /* Center-align the text */
   }
- 
-  .nav > #nav-check:not(:checked) ~ .nav-links {
+
+  .nav>#nav-check:not(:checked)~.nav-links {
     height: 0;
   }
-  .nav > #nav-check:checked ~ .nav-links {
-    height: auto; /* Change this to auto */
+
+  .nav>#nav-check:checked~.nav-links {
+    height: auto;
+    /* Change this to auto */
     overflow-y: auto;
     z-index: 99;
   }
-  .nav{
+
+  .nav {
     background-color: #9E1C36;
   }
 }
@@ -198,16 +213,19 @@
 }
 
 .dyimg {
-  margin-right: 20px; /* Adjust the spacing between the image and the title */
+  margin-right: 20px;
+  /* Adjust the spacing between the image and the title */
 }
 
 .title h2 {
-  margin: 0; /* Remove default margin for h2 */
+  margin: 0;
+  /* Remove default margin for h2 */
   font-family: 'Noto Serif', serif;
   font-weight: 700;
   color: #9E1C36;
 }
-.title p{
+
+.title p {
   margin: 0;
   font-weight: bolder;
   font-size: 16px;
@@ -216,13 +234,16 @@
 
 @media (max-width: 768px) {
   .header {
-    flex-direction: column; /* Stack items vertically on smaller screens */
+    flex-direction: column;
+    /* Stack items vertically on smaller screens */
     margin-bottom: 20px;
   }
 
   .dyimg {
-    margin-bottom: 15px; /* Adjust the spacing between the image and the title for mobile */
-    margin-right: 0; /* Reset margin for mobile */
+    margin-bottom: 15px;
+    /* Adjust the spacing between the image and the title for mobile */
+    margin-right: 0;
+    /* Reset margin for mobile */
   }
 }
 
@@ -241,7 +262,7 @@
   text-align: center;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
-  margin-bottom: 20px; /* Add margin between text and image */
+  /* Add margin between text and image */
 }
 
 .textconf p {
@@ -252,20 +273,25 @@
   color: #000;
 }
 
-@media (max-width: 768px) {
-  .textconf > h3{
+@media (max-width: 800px) {
+  .textconf>h3 {
     font-size: 16px;
   }
-  .textconf > p{
+
+  .textconf>p {
     font-size: 14px;
   }
 }
 
 @media (min-width: 800px) and (max-width: 1300px) {
-  .textconf > h3{
+  .textconf{
+    margin-top: 10px;
+  }
+  .textconf>h3 {
     font-size: 17px;
   }
-  .textconf > p{
+
+  .textconf>p {
     font-size: 15px;
   }
 }
@@ -277,34 +303,40 @@
 /* Add this CSS to your existing styles or in a separate stylesheet */
 
 #myCarousel {
-  max-width: 800px; 
+  max-width: 800px;
   margin-right: auto;
   margin-left: 15%;
 }
 
 .carousel-inner {
-  width: 100%; 
+  width: 100%;
   border-radius: 15px;
 }
 
 .carousel-item {
-  width: 100%; /* Set a fixed width for each slide */
+  width: 100%;
+  /* Set a fixed width for each slide */
 }
 
 .carousel-item img {
-  width: 100%; /* Make sure the image inside each slide takes full width */
-  height: 450px; /* Set a fixed height for the images */
-  object-fit: cover; /* Maintain the aspect ratio and cover the entire space */
+  width: 100%;
+  /* Make sure the image inside each slide takes full width */
+  height: 450px;
+  /* Set a fixed height for the images */
+  object-fit: cover;
+  /* Maintain the aspect ratio and cover the entire space */
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   #myCarousel {
     max-width: 100%;
-    margin: 0 auto; /* Allow the carousel to take full width on small screens */
+    margin: 0 auto;
+    /* Allow the carousel to take full width on small screens */
   }
 
   .carousel-item img {
-    height: auto; /* Auto height for images on smaller screens */
+    height: auto;
+    /* Auto height for images on smaller screens */
   }
 }
 
@@ -313,25 +345,26 @@
     max-width: 100%;
     margin-left: 8%;
   }
-  .carousel-item  img {
-    height: 300px; 
+
+  .carousel-item img {
+    height: 300px;
     width: 100%;
   }
 }
 
 
 .content p {
-    font-size: 20px;
-    line-height: 1.6;
-    color: #000;
-    text-align: center;
-    margin-top: 25px;
-    margin-right: 23px;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #000;
+  text-align: center;
+  margin-top: 25px;
+  margin-right: 23px;
 }
-  
-@media (max-width: 767px) {
-  
-  .content p{
+
+@media (max-width: 800px) {
+
+  .content p {
     font-size: 13px;
     line-height: 1.3;
   }
@@ -339,8 +372,181 @@
 
 
 @media (min-width: 800px) and (max-width: 1300px) {
-  .content p{
+  .content p {
     font-size: 14px;
     margin-top: 0;
   }
 }
+
+
+
+
+.callforpapers {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+.abt {
+  font-size: 24px;
+  color: #9E1C36;
+  text-align: center;
+}
+
+
+
+
+.containerdate {
+  max-width: 400px;
+  max-height: 550px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.date-item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+}
+
+h3 {
+  color: #333;
+}
+
+p {
+  color: #666;
+  margin-top: 5px;
+}
+
+@media (max-width: 800px) {
+  .containerdate{
+    width: 300px;
+    margin-top: 0;
+    margin: 0 auto;
+  }
+  .date-item{
+    margin-top: 7px;
+    padding: 10px;
+  }
+  h2{
+    font-size: 18px;
+  }
+  h3{
+    font-size: 15px;
+  }
+  p{
+    font-size: 14px;
+  }
+}
+
+
+.notesgrid {
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+  font-size: 23px;
+}
+
+
+ul {
+  list-style-position: inside;
+  width: 700px;
+  background: white;
+  box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.15);
+  padding: 0;
+  height: auto;
+  margin: 0;
+  border-radius: 0.1rem;
+}
+
+li {
+  padding: 0 0 0 1rem;
+}
+
+li:not(:last-child) {
+  border-bottom: 1px solid #9E1C36;
+}
+
+li:first-child {
+  margin-top: 1rem;
+}
+
+li:last-child {
+  margin-bottom: 1rem;
+}
+
+::marker {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='14' viewBox='0 0 50 50'%3E%3Cpath d='M46.4 16.2c-2.3-2.3-5.4-3.5-8.4-4.5-.5-.2-1.1-.3-1.6-.5-1.6-1.6-3.7-2.8-6.2-3.2-1-.2-1.9.1-2.5.6-.9-.3-1.8-.6-2.7-.8-3.2-1-6.4-1.8-9.5-.1-1 .5-1.9 1.2-2.7 2-6.4 1.4-11.7 5-12.4 12.7C0 27 1.9 31.5 4.9 34.9c.1.6.2 1.1.4 1.7 1 3.2 3.3 5.7 6.7 6.5 2.7.6 5.4-.2 7.9-1.2 3.3.4 6.7.3 9.9 0 6.5-.7 13.3-2.8 17.1-8.5 3.6-5.2 4-12.6-.5-17.2zm-17.3.9c2.1.4 4 1.7 4.7 3.8 0 .5-.1 1.1-.2 1.6-.3 1.4-.8 2.6-1.6 3.7-.7.2-1.5.1-2.3-.4-.8-.4-1.6-1-2.2-1.6-.4-.4-1.2-1.7-1.6-1.9 3.4 1.3 5.1-3 3.2-5.2zm-11.6 9.7c.2-1.9 1.1-3.9 2.3-5.5-.4 2.1.3 4.2 1.7 6 1.3 1.7 3.1 3.2 5 4.2-.2.1-.4.2-.6.4-.1 0-.1.1-.2.1-3.9.2-8.7-.8-8.2-5.2zm-6.4 3.1c.1.3.1.7.2 1 .2.6.4 1.2.7 1.8-.4-.2-.7-.5-1-.7.1-.8.1-1.4.1-2.1zm31.2-1.3c-.9 1.7-2.1 3.1-3.7 4.1 2-2.1 3.4-4.7 4-7.6.2-.7.3-1.4.3-2.1.6 1.5.5 3.3-.6 5.6z'/%3E%3C/svg%3E") ' ';
+}
+
+li:nth-child(3n)::marker {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='14' viewBox='0 0 50 50'%3E%3Cpath d='M46.5 12.5c-.4-1.1-1.3-1.8-2.2-2-4.2-4-11.6-4.3-17.1-4.1-6.9.3-13.9 2.1-19.4 6.5C2 17.5-2.4 25.7 2.5 32.6c2.2 3.2 5.5 4.9 9 5.5 3.3 1.7 6.7 3.3 10.2 4.4 7.8 2.3 17 1.6 23.2-4.3 7.3-7 4.8-17.3 1.6-25.7zm-20.2 2.7c.6 0 1.3 0 1.8.2 1.1.4 1.7 1.3 2 2.3-1-1.2-2.4-2.1-3.8-2.5zm-1.4 6.6c.9.9 1.3 2.2-.2 2.3-2 .2-1.1-1.9.2-2.3zm-11.8 9.8c-.6-.3-2.9-1.1-3.2-1.8-.2-.5 1.4-3.1 2.1-4.2.3.5.7 1 1.2 1.4 0 .3.1.6.2.8.5 1.9 1.5 3.1 2.9 4h-.2c-.8.1-1.6.1-2.5-.1-.2 0-.3 0-.5-.1zM24 36.4c1.6-.7 3-1.5 4.3-2.5.8.2 1.7.3 2.5.5 2.5.4 5.2.9 7.7.6-.9.6-2 1.1-3 1.4-3.9 1.3-7.7 1-11.5 0z'/%3E%3C/svg%3E") ' ';
+}
+
+li:nth-child(3n - 1)::marker {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='14' viewBox='0 0 50 50'%3E%3Cpath d='M48.3 23.7c-1-9.9-9.9-15.6-18.8-17.8-8.2-2.1-18.8-2.6-24.6 4.8C.6 16.2 1 23.6 4.3 29.3c-.5 1-.8 2-1 3-.6 4 2 7.6 5.1 10 5.9 4.4 14 4.2 19.6-.4 1.5 0 2.9-.2 4.4-.5 1.8 0 3.5 0 5.3-.1 2.3-.1 3.5-1.9 3.5-3.7 4.5-3.3 7.7-8.2 7.1-13.9zM9.1 17.8c1.1-4.1 4.9-5.8 8.8-6.1.9-.1 1.9-.1 2.9-.1-3.2 1.6-6.3 4.6-8 7.4-.1.1-.1.2-.2.3-1.1.9-2.1 1.9-3 2.9-.2.2-.4.4-.5.6-.4-1.7-.5-3.3 0-5z'/%3E%3C/svg%3E") ' ';
+}
+
+@media (max-width: 800px) {
+  .abt {
+    font-size: 18px;
+  }
+
+  .notesgrid {
+    width: auto;
+    font-size: 16px;
+    margin: 0;
+    /* Remove margin from the top and bottom */
+  }
+
+  .containerdate {
+    margin-top: 0;
+  }
+
+  ul {
+    width: 100%;
+  }
+
+  ::marker {
+    content: none;
+  }
+
+  li {
+    padding-left: 1rem;
+  }
+
+  li:not(:last-child) {
+    border-bottom: 1px solid lightblue;
+  }
+
+  li:first-child {
+    margin-top: 0;
+    /* Remove margin from the top */
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+    /* Remove margin from the bottom */
+  }
+
+  li:nth-child(3n)::marker,
+  li:nth-child(3n - 1)::marker {
+    content: none;
+  }
+
+  .callforpapers {
+    display: block;
+  }
+}
+
