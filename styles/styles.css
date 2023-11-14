@@ -129,7 +129,11 @@
   display: none;
 }
 
-
+@media (min-width: 800px) and (max-width: 1300px) {
+  .nav > .nav-links > a{
+    font-size: 12px;
+  }
+}
 
 @media (max-width: 800px) {
   .nav > .nav-btn {
@@ -219,5 +223,124 @@
   .dyimg {
     margin-bottom: 15px; /* Adjust the spacing between the image and the title for mobile */
     margin-right: 0; /* Reset margin for mobile */
+  }
+}
+
+
+.homesection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  width: auto;
+}
+
+.textconf {
+  max-width: 1350px;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  margin-bottom: 20px; /* Add margin between text and image */
+}
+
+.textconf p {
+  margin: 10px 0;
+  font-family: 'Noto Serif', serif;
+  font-weight: normal;
+  font-size: 1.2em;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .textconf > h3{
+    font-size: 16px;
+  }
+  .textconf > p{
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1300px) {
+  .textconf > h3{
+    font-size: 17px;
+  }
+  .textconf > p{
+    font-size: 15px;
+  }
+}
+
+
+
+
+
+/* Add this CSS to your existing styles or in a separate stylesheet */
+
+#myCarousel {
+  max-width: 800px; 
+  margin-right: auto;
+  margin-left: 15%;
+}
+
+.carousel-inner {
+  width: 100%; 
+  border-radius: 15px;
+}
+
+.carousel-item {
+  width: 100%; /* Set a fixed width for each slide */
+}
+
+.carousel-item img {
+  width: 100%; /* Make sure the image inside each slide takes full width */
+  height: 450px; /* Set a fixed height for the images */
+  object-fit: cover; /* Maintain the aspect ratio and cover the entire space */
+}
+
+@media (max-width: 767px) {
+  #myCarousel {
+    max-width: 100%;
+    margin: 0 auto; /* Allow the carousel to take full width on small screens */
+  }
+
+  .carousel-item img {
+    height: auto; /* Auto height for images on smaller screens */
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1300px) {
+  #myCarousel {
+    max-width: 100%;
+    margin-left: 8%;
+  }
+  .carousel-item  img {
+    height: 300px; 
+    width: 100%;
+  }
+}
+
+
+.content p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #000;
+    text-align: center;
+    margin-top: 25px;
+    margin-right: 23px;
+}
+  
+@media (max-width: 767px) {
+  
+  .content p{
+    font-size: 13px;
+    line-height: 1.3;
+  }
+}
+
+
+@media (min-width: 800px) and (max-width: 1300px) {
+  .content p{
+    font-size: 14px;
+    margin-top: 0;
   }
 }
