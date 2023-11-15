@@ -6,80 +6,6 @@
   padding: 0;
 }
 
-/* .top-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.conference-heading{
-    color: #9E1C36;
-    margin-top: 20px;
-    font-size: 1.7rem;
-    line-height: 1.2;
-    font-weight: 500;
-}
-
-.conference-heading h2{
-    text-align: center;
-    font-family: 'Shippori Mincho B1', serif;
-}
-
-.dylogo img{
-    width: 300px;
-}
-
-.conference-heading p{
-    text-align: center;
-    color: black;
-    font-weight: bolder;
-    margin-top: 10px;
-}
-
-@media (max-width: 767px) {
-    .top-header {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10px;
-    }
-
-    .dylogo img {
-        width: 200px; /* Further reduce image width for small screens if needed */
-/* }
-    .conference-heading{
-        margin: 8px;
-    }
-    .conference-heading h2 {
-        font-size: 1.3rem; /* Adjust heading font size for small screens */
-/* }
-    .conference-heading p{
-        font-size: 1.1rem;
-        padding-top: 10px;
-        color: black;
-        font-weight: bolder;
-    } }*/
-
-
-/* @media (min-width: 768px) and (max-width: 1300px) {
-    .dylogo img {
-        width: 250px;
-      
-    }
-
-    .conference-heading h2 {
-        font-size: 20px; 
-    }
-
-    .conference-heading p{
-        color: black;
-        font-weight: bolder;
-        font-size: 16px;
-    }
-} */
-
-
-
-
 
 
 .nav {
@@ -284,9 +210,10 @@
 }
 
 @media (min-width: 800px) and (max-width: 1300px) {
-  .textconf{
+  .textconf {
     margin-top: 10px;
   }
+
   .textconf>h3 {
     font-size: 17px;
   }
@@ -430,22 +357,26 @@ p {
 }
 
 @media (max-width: 800px) {
-  .containerdate{
+  .containerdate {
     width: 300px;
     margin-top: 0;
     margin: 0 auto;
   }
-  .date-item{
+
+  .date-item {
     margin-top: 7px;
     padding: 10px;
   }
-  h2{
+
+  h2 {
     font-size: 18px;
   }
-  h3{
+
+  h3 {
     font-size: 15px;
   }
-  p{
+
+  p {
     font-size: 14px;
   }
 }
@@ -550,3 +481,147 @@ li:nth-child(3n - 1)::marker {
   }
 }
 
+
+.committeesec{
+  height: auto;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 20px;
+  row-gap: 20px;
+}
+
+.card {
+  width: 250px;
+  text-align: center;
+}
+
+.card img {
+  height: 280px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h5 {
+  color: #9E1C36;
+}
+
+.card-body {
+  text-align: center;
+}
+
+
+
+
+
+  
+.dropdownscom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0; /* Add spacing from top and bottom */
+}
+
+.dropdown {
+  margin-right: 20px;
+  position: relative;
+}
+
+label {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+/* Hide checkboxes */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Display content when checkbox is checked */
+input[type="checkbox"]:checked + .dropdown-content {
+  display: block;
+  opacity: 1;
+}
+
+/* Style for dropdown content items */
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+
+@media (max-width: 800px) {
+  .image-grid {
+    display: block;
+    text-align: center;
+  }
+
+  .card {
+    margin-bottom: 20px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .dropdownscom {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .dropdown {
+    margin-right: 0;
+  }
+
+  .dropdown-content {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1300px) {
+  .card {
+    margin-bottom: 20px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .dropdownscom {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .dropdown {
+    margin-right: 0;
+  }
+
+  .dropdown-content {
+    width: 100%;
+    font-size: 14px;
+  }
+}
