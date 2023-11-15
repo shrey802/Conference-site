@@ -482,7 +482,7 @@ li:nth-child(3n - 1)::marker {
 }
 
 
-.committeesec{
+.committeesec {
   height: auto;
 }
 
@@ -523,17 +523,19 @@ li:nth-child(3n - 1)::marker {
 
 
 
-  
+
 .dropdownscom {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0; /* Add spacing from top and bottom */
+  flex-wrap: wrap;
+  margin: 20px 0;
 }
 
 .dropdown {
   margin-right: 20px;
   position: relative;
+  z-index: 1;
 }
 
 label {
@@ -549,9 +551,10 @@ label {
   position: absolute;
   background-color: #f9f9f9;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  z-index: 1;
+  z-index: 2;
   opacity: 0;
   transition: opacity 0.2s ease;
+  margin-top: 10px; /* Add margin to the top of dropdown content */
 }
 
 /* Hide checkboxes */
@@ -571,6 +574,11 @@ input[type="checkbox"]:checked + .dropdown-content {
   padding: 10px;
   text-decoration: none;
   color: #333;
+}
+
+.card {
+  width: calc(25% - 20px); /* Adjust card width and spacing */
+  margin-bottom: 20px; /* Adjust spacing between cards and dropdowns */
 }
 
 
@@ -623,5 +631,41 @@ input[type="checkbox"]:checked + .dropdown-content {
   .dropdown-content {
     width: 100%;
     font-size: 14px;
+  }
+}
+
+
+
+.author {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0; 
+}
+
+.cards {
+  width: calc(25% - 20px); /* Adjust card width with margin */
+  padding: 20px;
+  border: 1px solid #ddd; /* Border color */
+  border-radius: 8px; /* Border radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift effect */
+  box-sizing: border-box;
+  background-color: #FAF6F0;
+  margin-top: 10px;
+}
+
+.cards h2 {
+  color: #9E1C36; /* Heading color */
+}
+
+.cards p {
+  color: #000; /* Paragraph text color */
+}
+
+@media (max-width:800px) {
+  .author{
+    display: block;
+  }
+  .cards{
+    width: auto;
   }
 }
