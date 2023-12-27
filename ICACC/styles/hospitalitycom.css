@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+  }
+  
+  .dyimg {
+    margin-right: 20px;
+    /* Adjust the spacing between the image and the title */
+  }
+  
+  .title h2 {
+    margin: 0;
+    /* Remove default margin for h2 */
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+    color: #0d71aa;
+    font-size: 23px;
+  }
+  
+  .title p {
+    margin: 0;
+    font-weight: bolder;
+    font-size: 20px;
+    line-height: normal;
+  }
+  
+  @media (max-width: 800px) {
+    .header {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    .title p{
+        font-size: 18px;
+    }
+    .title h2{
+        font-size: 18px;
+    }
+    .dyimg {
+      margin-bottom: 15px;
+      /* Adjust the spacing between the image and the title for mobile */
+      margin-right: 0;
+      /* Reset margin for mobile */
+    }
+  }
+
+
+
+
+  .navbar {
+    /* background-color: #0d71aa; */
+    text-align: center;
+}
+
+.navbar-toggler {
+    border-color: #ffffff; /* Set border color for the toggle button */
+}
+
+.navbar-nav {
+    margin: 0 auto; /* Center the navbar items */
+}
+
+.nav-item {
+    margin: 0 10px; /* Adjust the margin between navbar items */
+}
+
+.nav-link {
+    color: #0d71aa !important;
+  
+    font-size: 18px; 
+}
+
+.dropdown-menu {
+    background-color: #0d71aa;
+}
+
+.dropdown-item {
+    color: #0d71aa !important; /* Set text color for dropdown items */
+}
+
+
+
+.conference-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9); /* White opaque background */
+    padding: 20px;
+    text-align: center;
+    color: #333; /* Dark text color */
+}
+
+.large-text {
+    font-size: 36px;
+    font-weight: bold;
+    color: #0d71aa; /* Dark blue color */
+}
+
+.medium-text {
+    font-size: 24px;
+    color: #555; /* Dark gray color */
+}
+
+.background-image {
+    width: 100%;
+    height: 50vh;
+    background-image: url('https://as2.ftcdn.net/v2/jpg/04/18/84/23/1000_F_418842375_mdQsFdQgV93p0WqDvAtQBXLdi6TuwE2Z.jpg'); /* Replace 'your-image-url.jpg' with the actual image URL */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* .background-image{
+        height: 100vh;
+    } */
+    .conference-info {
+        padding: 10px;
+        /* margin-top: 20px; */
+    }
+
+    .large-text {
+        font-size: 24px;
+    }
+
+    .medium-text {
+        font-size: 18px;
+    }
+
+}
+
+.home-footer {
+    background-color: #0d71aa; /* Dark blue background color */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-text {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text p {
+    margin: 0;
+    font-size: 20px;
+    padding: 5px;
+}
+@media screen and (max-width: 768px) {
+    .footer-text {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-text p {
+        font-size: 13px;
+    }
+}
+
